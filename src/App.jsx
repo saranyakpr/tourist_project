@@ -9,8 +9,8 @@ function App() {
     <>
       {/* Existing Navbar */}
 
-      <main className="w-full max-w-none m-0 p-0">
-  <Routes>
+      <main className="w-full min-w-0 m-0 p-0">
+        <Routes>
           {/* Other existing routes */}
 
           <Route path="/about" element={<About />} />
