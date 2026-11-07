@@ -146,7 +146,7 @@ export default function Promise() {
           </p>
 
           <a
-            href="#destination"
+            href="/PlanYourTrip"
             className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition duration-300 hover:scale-105"
           >
             Start Your Plan

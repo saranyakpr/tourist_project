@@ -4,12 +4,12 @@ import React from "react";
 export default function Footer() {
 
   const navigation = [
-    { name: "Home", link: "#home" },
+    { name: "Home", link: "/" },
     { name: "About Us", link: "#about" },
     { name: "Destinations", link: "#destination" },
-    { name: "Our Promises", link: "#promise" },
+    { name: "TasteTrails", link: "/taste-trails" },
     { name: "Packages", link: "#package" },
-    { name: "Reviews", link: "#review" }
+    { name: "TripType", link: "/planyourtrip" }
   ];
 
   const topSpots = [

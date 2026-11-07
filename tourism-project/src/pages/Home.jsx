@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "../component/Navbar";
+import Homenavbar from "../component/Homenavbar";
 import Hero from "../component/Hero";
 import Welcome from "../component/Welcome";
 import Promise from "../component/Promise"; 
 import Footer from "../component/Footer";
 import Scrolltop from "../component/Scrolltop";
-import Map from "../component/map";
+import Map from "../component/Map";
 export default function Home(){
     return(
         <>
-        <Navbar></Navbar>
+        <Homenavbar></Homenavbar>
         <Hero></Hero>
         <Welcome></Welcome>
         <Promise></Promise>
