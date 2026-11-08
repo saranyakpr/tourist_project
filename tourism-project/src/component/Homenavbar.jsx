@@ -15,11 +15,12 @@ export default function Homenavbar() {
 
   const menuItems = [
     { name: "Home", icon: <Home size={16} />, link: "/" },
-    { name: "About", icon: <Info size={16} />, link: "#about" },
+    { name: "About", icon: <Info size={16} />, link: "/about" },
     { name: "Destination", icon: <MapPin size={16} />, link: "#destination" },
-    { name: "Trip Type", icon: <Backpack size={16} />, link: "/planyourtrip" },
     { name: "Package", icon: <Briefcase size={16} />, link: "#package" },
-    { name: "Taste Trails", icon: <Utensils size={16} />, link: "/taste-trails" }
+    { name: "Taste Trails", icon: <Utensils size={16} />, link: "/taste-trails" },
+   { name: "Reviews", icon: <Backpack size={16} />, link: "/reviews" },
+    { name: "Contact", icon: <Backpack size={16} />, link: "/contact" },
   ];
 
   return (

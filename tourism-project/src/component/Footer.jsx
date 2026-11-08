@@ -5,11 +5,12 @@ export default function Footer() {
 
   const navigation = [
     { name: "Home", link: "/" },
-    { name: "About Us", link: "#about" },
+    { name: "About Us", link: "/about" },
     { name: "Destinations", link: "#destination" },
     { name: "TasteTrails", link: "/taste-trails" },
     { name: "Packages", link: "#package" },
-    { name: "TripType", link: "/planyourtrip" }
+    { name: "TripType", link: "/planyourtrip" },
+     { name: "Contact", link: "/contact" }
   ];
 
   const topSpots = [
