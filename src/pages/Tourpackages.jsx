@@ -12,7 +12,7 @@ const packages = [
     rating: "4.9",
     location: "Courtallam",
     people: "2–6 People",
-    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1000&q=85",
+    image: "photo1.avif",
     description: "Discover the refreshing beauty of Courtallam, surrounded by lush greenery and beautiful waterfalls.",
     highlights: ["Main Falls", "Five Falls", "Old Courtallam", "Nature Photography"],
     itinerary: [
@@ -34,7 +34,7 @@ const packages = [
     rating: "4.8",
     location: "Shenkottai",
     people: "2–8 People",
-    image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=85",
+    image: "photo2.avif",
     description: "Escape into the peaceful mountain landscapes and beautiful green surroundings of the Western Ghats.",
     highlights: ["Mountain Views", "Gundar Dam Area", "Sunrise View", "Photography"],
     itinerary: [
@@ -55,7 +55,7 @@ const packages = [
     rating: "4.9",
     location: "Tenkasi",
     people: "2–10 People",
-    image: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1000&q=85",
+    image: "photo3.avif",
     description: "Experience the spiritual charm, ancient architecture and cultural heritage of Tenkasi.",
     highlights: ["Kasi Viswanathar Temple", "Kuttralanathar Temple", "Chitra Sabha Area", "Heritage Walk"],
     itinerary: [
@@ -76,7 +76,7 @@ const packages = [
     rating: "4.7",
     location: "Gundar",
     people: "2–6 People",
-    image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85",
+    image: "photo4.avif",
     description: "Discover peaceful reservoir surroundings, scenic roads and lesser-known natural escapes.",
     highlights: ["Gundar Reservoir", "Adavinainar Dam Area", "Scenic Stops", "Picnic Time"],
     itinerary: [
@@ -97,7 +97,7 @@ const packages = [
     rating: "4.8",
     location: "Tenkasi District",
     people: "4–10 People",
-    image: "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=1000&q=85",
+    image: "photo5.avif",
     description: "Enjoy a relaxed family holiday with sightseeing, nature stops and memorable experiences.",
     highlights: ["Family Sightseeing", "Nature Stops", "Temple Visit Option", "Flexible Schedule"],
     itinerary: [
@@ -118,7 +118,7 @@ const packages = [
     rating: "5.0",
     location: "Tenkasi District",
     people: "2–8 People",
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85",
+    image: "photo6.avif",
     description: "One unforgettable journey through waterfalls, sacred temples, mountain views and hidden escapes.",
     highlights: ["Courtallam", "Temple Heritage", "Dam Views", "Nature Experiences"],
     itinerary: [
@@ -322,7 +322,7 @@ useEffect(() => {
           muted
           loop
           playsInline
-          poster="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1800&q=85"
+          poster="photo2.avif"
         >
           <source
             src="https://videos.pexels.com/video-files/3129595/3129595-hd_1920_1080_25fps.mp4"
@@ -390,7 +390,7 @@ useEffect(() => {
           <div className="relative hidden h-[470px] lg:block">
             <div className="tp-float absolute right-8 top-3 h-[410px] w-[300px] overflow-hidden rounded-[160px] border-[7px] border-white/20 shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85"
+                src="photo4.avif"
                 alt="Green mountain landscape"
                 className="h-full w-full object-cover"
               />
@@ -398,7 +398,7 @@ useEffect(() => {
 
             <div className="tp-float absolute bottom-0 left-0 w-60 rounded-3xl border border-white/30 bg-white/15 p-3 shadow-2xl backdrop-blur-xl" style={{ animationDelay: "1s" }}>
               <img
-                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=600&q=85"
+                src="ottakal.jpg"
                 alt="Waterfall"
                 className="h-32 w-full rounded-2xl object-cover"
               />
@@ -475,7 +475,7 @@ useEffect(() => {
 
           <div className="min-h-[330px] overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=85"
+              src="lake.jpg"
               alt="Sunlight in a green forest"
               className="h-full min-h-[330px] w-full object-cover transition duration-1000 hover:scale-105"
             />
@@ -732,7 +732,7 @@ useEffect(() => {
         <div className="tp-animate relative mx-auto flex min-h-[400px] max-w-7xl items-center overflow-hidden rounded-[2rem] bg-[#153b29]">
 
           <img
-            src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=85"
+            src="natureex1.jpg"
             alt="Beautiful forest landscape"
             className="absolute inset-0 h-full w-full object-cover opacity-50"
           />
