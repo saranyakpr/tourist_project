@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import Homenavbar from "../component/Homenavbar";
 import Footer from "../component/Footer";
 
-
 // ---------------- TRIP TYPE OPTIONS ----------------
 
 const tripTypes = [

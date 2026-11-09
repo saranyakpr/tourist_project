@@ -1732,7 +1732,7 @@ function FinalCTASection() {
               whileTap={{ scale: 0.96 }}
             >
               <Link
-                to="/places"
+                to="/destination"
                 className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full bg-[#f7f8ef] px-9 py-4 text-base font-bold text-green-950 shadow-xl transition-colors duration-300 hover:bg-emerald-50"
               >
                 <span>Explore Tourist Places</span>

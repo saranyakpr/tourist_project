@@ -6,9 +6,9 @@ export default function Footer() {
   const navigation = [
     { name: "Home", link: "/" },
     { name: "About Us", link: "/about" },
-    { name: "Destinations", link: "#destination" },
+    { name: "Destinations", link: "/destination" },
     { name: "TasteTrails", link: "/taste-trails" },
-    { name: "Packages", link: "#package" },
+    { name: "Packages", link: "/tour-packages" },
     { name: "TripType", link: "/planyourtrip" },
      { name: "Contact", link: "/contact" }
   ];
