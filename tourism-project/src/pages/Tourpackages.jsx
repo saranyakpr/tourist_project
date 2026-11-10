@@ -361,14 +361,14 @@ useEffect(() => {
 
             <div className="mt-9 flex flex-wrap gap-4">
               <a
-                href="#tp-packages"
+                href="/tour-packages"
                 className="tp-button rounded-full bg-[#d5edb7] px-8 py-4 text-sm font-extrabold text-[#183b29] shadow-xl"
               >
                 Explore packages ↗
               </a>
 
               <a
-                href="#tp-enquiry"
+                href="/planyourtrip"
                 className="tp-button rounded-full border border-white/40 bg-white/10 px-8 py-4 text-sm font-bold text-white backdrop-blur"
               >
                 Trip Type →
