@@ -39,7 +39,7 @@ export default function Homenavbar() {
   return (
     <header className="fixed top-0 left-0 w-full min-h-20
       bg-gradient-to-r from-white via-green-50 to-orange-50
-      shadow-md z-50">
+      shadow-md z-[10000]">
 
       <div className="max-w-7xl mx-auto px-2 sm:px-5 md:px-8
         min-h-20 flex items-center justify-between gap-2">
