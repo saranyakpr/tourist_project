@@ -139,7 +139,7 @@ export default function Intogreen() {
             <div className="absolute -right-5 -top-5 h-full w-full rounded-[30px] border-2 border-[#b5c8a3]" />
 
             <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000"
+              src="/road.jpg"
               alt="Beautiful green nature"
               className="relative h-[420px] w-full rounded-[30px] object-cover shadow-xl transition duration-700 hover:scale-[1.02]"
             />

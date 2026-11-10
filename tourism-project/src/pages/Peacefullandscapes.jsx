@@ -106,7 +106,7 @@ export default function Peacefullandscapes() {
             </p>
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">
               Peaceful Places
-            </h2>
+                     </h2>
           </div>
           <span className="text-sm text-[#829080]">
             Discover • Relax • Reconnect
@@ -169,7 +169,7 @@ export default function Peacefullandscapes() {
 
     {/* BUTTONS */}
     <div className="mt-10 flex flex-wrap items-center justify-center gap-5">
-      
+
       {/* Tour Packages */}
       <Link
         to="/tour-packages"
