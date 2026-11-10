@@ -169,7 +169,7 @@ export default function Peacefullandscapes() {
 
     {/* BUTTONS */}
     <div className="mt-10 flex flex-wrap items-center justify-center gap-5">
-
+      
       {/* Tour Packages */}
       <Link
         to="/tour-packages"
