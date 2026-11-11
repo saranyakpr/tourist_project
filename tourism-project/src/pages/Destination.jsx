@@ -222,11 +222,7 @@ export default function Destination() {
         {/* Hero Content */}
         <div className="destination-hero-text relative z-10 mx-auto max-w-5xl px-5 text-center">
 
-          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-5 py-3 text-xs font-semibold tracking-[3px] text-white backdrop-blur-md sm:text-sm">
-            <span className="text-green-300">✦</span>
-            WELCOME TO TENKASI
-            <span className="text-green-300">✦</span>
-          </div>
+          
 
           <p className="mb-4 text-sm font-medium tracking-[5px] text-green-100 sm:text-base">
             WHERE NATURE MEETS PEACE

@@ -74,7 +74,7 @@ const areas = [
         id: 3,
         name: "Raj Mess",
         foodType: "both",
-        image: "/raj.jpg",
+        image: "/raj mess.jpg.jpeg",
         location: "Old Bus Stand, Tenkasi",
         menu: {
           breakfast: {
@@ -94,26 +94,27 @@ const areas = [
     ],
   },
   {
-    name: "East Car Street",
+    name: "Kuthukal Valasai",
     restaurants: [
       {
         id: 4,
-        name: "Murali Tiffin",
+        name: "Althaf hotal",
         foodType: "both",
-        image: "/murali.jpg",
-        location: "East Car Street, Tenkasi",
+        image: "/althaf.jpg.jpeg",
+        location: "Kuthukkal Valasai, Tenkasi",
         menu: {
-          breakfast: {
-            veg: ["Idli", "Masala Dosa", "Pongal", "Poori"],
-            nonveg: ["Egg Dosa", "Egg Omelette"],
+          breakfast:{
+            veg:["Dosa","Idli"],
+            nonveg:["Chicken Curry","Mutton Curry"]
           },
+        
           lunch: {
-            veg: ["Veg Meals", "Sambar Rice", "Curd Rice"],
-            nonveg: ["Chicken Curry", "Chicken Meals", "Fish Fry"],
+            veg: ["Veg Fried Rice", "Paneer Fried Rice", "Chilly Paneer"],
+            nonveg: ["Chicken Curry", "Chicken Biriyani", "Chicken Lollipop"],
           },
           dinner: {
-            veg: ["Ghee Roast", "Onion Uthappam", "Parotta"],
-            nonveg: ["Chicken Dosa", "Chicken Curry", "Egg Dosa"],
+            veg: ["Ghee Roast", "Gobi Manchurian", "Butter Naan"],
+            nonveg: [" Classic Shawarma", "Grill", "Honey Garlic Chicken"],
           },
         },
       },
@@ -177,7 +178,7 @@ const areas = [
         id: 7,
         name: "Topi Vappa",
         foodType: "both",
-        image: "/topi.jpg",
+        image: "/topi1.jpeg",
         location: "Kuthukalvalasai, Tenkasi",
         menu: {
           breakfast: {
@@ -223,37 +224,44 @@ const areas = [
     ],
   },
   {
-    name: "Housing Board",
-    restaurants: [
-      {
-        id: 9,
-        name: "Udayam Veg",
-        foodType: "veg",
-        image: "/udhyam.jpg",
-        location: "Housing Board, Tenkasi",
-        menu: {
-          breakfast: {
-            veg: [
-              "Idli",
-              "Pongal",
-              "Ghee Roast",
-              "Masala Dosa",
-              "Poori Masala",
-            ],
-            nonveg: [],
-          },
-          lunch: {
-            veg: ["South Indian Meals", "Sambar Rice", "Curd Rice", "Poriyal"],
-            nonveg: [],
-          },
-          dinner: {
-            veg: ["Dosa", "Chapati", "Veg Fried Rice", "Paneer Masala"],
-            nonveg: [],
-          },
+  name: "Sengottai",
+  restaurants: [
+    {
+      id: 9,
+      name: "Salam RR Biriyani",
+      foodType: "both",
+      image: "/salam.jpeg",
+      location: "Sengottai, Tenkasi",
+
+      menu: {
+        breakfast: {
+          veg: ["Idli", "Dosa", "Puri"],
+          nonveg: ["Egg Dosa", "Chicken Dosa", "Omelette"],
+        },
+
+        lunch: {
+          veg: ["Veg Fried Rice", "Veg Noodles"],
+          nonveg: [
+            "Chicken Biriyani",
+            "Mutton Biriyani",
+            "Chicken 65",
+            "Egg Biriyani",
+          ],
+        },
+
+        dinner: {
+          veg: ["Chappathi", "Paneer Butter Masala"],
+          nonveg: [
+            "Parotta",
+            "Chicken Tikka",
+            "Chicken Roll",
+            "Chicken Noodle",
+          ],
         },
       },
-    ],
-  },
+    },
+  ],
+}
 ];
 
 
@@ -263,40 +271,32 @@ const areas = [
 const heroSlides = [
   {
     id: 1,
-    name: "Senkottai Border Parotta",
-    image: "/images/senkottai%20border%20parotta.jpg",
-  },
-  {
-    id: 2,
     name: "Chilli Parotta & Kothu Parotta",
     image: "/images/chilli-parotta.jpg",
+    fit: "cover",
   },
+  
+  
   {
-    id: 3,
-    name: "Naatu Kozhi Kuzhambu & Varuval",
-    image: "/images/Naatu Kozhi Kuzhambu & Varuval.jpg",
+    id: 2,
+    name: "Chicken Curry",
+    image: "/chicken.jpeg",
+     fit: "cover",
   },
  
   {
-    id: 5,
+    id: 3,
     name: "Kadayanallur Biryani",
-    image: "/images/Kadayanallur%20Biryani.jpg",
+    image: "/biriyani2.jpeg",
+     fit: "cover",
   },
   {
-    id: 6,
+    id: 4,
     name: "Puliyankudi Lemon Pickle",
-    image: "/images/Puliyankudi%20Lemon%20Pickle.jpg",
+    image: "/pickle.jpeg",
+    fit: "cover",
   },
-  {
-    id: 7,
-    name: "Karupatti Coffee & Sweets",
-    image: "/images/Karupatti Coffee & Sweets.webp",
-  },
-  {
-    id: 8,
-    name: "Banana Chips & Local Snacks",
-    image: "/images/Banana Chips & Local Snacks.jpg",
-  },
+  
 ];
 
 // MEAL DETAILS
@@ -355,11 +355,11 @@ function RestaurantCard({ restaurant, areaName, onClick, index }) {
         </span>
 
         <span className="absolute right-4 top-4 rounded-full bg-white/95 px-3 py-2 text-xs font-bold text-green-800">
-          {restaurant.foodType === "veg"
-            ? "Pure Veg"
-            : restaurant.foodType === "nonveg"
-              ? "Non-Veg"
-              : "Veg & Non-Veg"}
+        {restaurant.foodType?.toLowerCase().replace(/[-\s]/g, "") === "veg"
+  ? "Pure Veg"
+  : restaurant.foodType?.toLowerCase().replace(/[-\s]/g, "") === "nonveg"
+    ? "Non-Veg"
+    : "Veg & Non-Veg"}
         </span>
       </div>
 
@@ -542,32 +542,36 @@ export default function TasteTrails() {
 
         {/* HERO SECTION - ALWAYS VISIBLE */}
 
-        <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-r from-green-950 via-green-800 to-emerald-700">
+        <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-black">
 
           {/* FOOD IMAGE SLIDER */}
 
-          <AnimatePresence mode="wait">
+          <AnimatePresence initial={false}>
             <motion.img
               key={heroSlides[currentSlide].id}
               src={heroSlides[currentSlide].image}
               alt={heroSlides[currentSlide].name}
-              initial={{ opacity: 0, scale: 1.08 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
               onError={(event) => {
                 event.currentTarget.onerror = null;
                 event.currentTarget.src = fallbackImage;
               }}
-              className="absolute inset-0 h-full w-full object-cover"
+              className={`absolute inset-0 h-full w-full ${
+  heroSlides[currentSlide].fit === "cover"
+    ? "object-cover"
+    : "object-contain"
+}`}
             />
           </AnimatePresence>
 
           {/* LIGHT OVERLAY - IMAGE CLEAR */}
 
-          <div className="absolute inset-0 bg-black/25" />
+          <div className="absolute inset-0 bg-black/10" />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-green-950/40 via-black/10 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent" />
 
           {/* HERO CONTENT */}
 
